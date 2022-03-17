@@ -11,10 +11,10 @@ import java.util.Date;
 @AllArgsConstructor
 public class Factura {
 
-    private String description;
     private Integer idFactura;
+    private String nombreProducto;
     private Integer precio;
     private Date fecha;
-    private String descuento;
+    private DescuentoValue descuento;
 
 }
