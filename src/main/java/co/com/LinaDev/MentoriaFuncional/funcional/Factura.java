@@ -10,5 +10,7 @@ import lombok.NoArgsConstructor;
 public class Factura {
 
     private String description;
-    private Integer id;
+    private Integer idFactura;
+    private Integer precio;
+
 }
