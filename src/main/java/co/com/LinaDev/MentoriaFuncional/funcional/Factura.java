@@ -14,7 +14,7 @@ public class Factura {
     private Integer idFactura;
     private String nombreProducto;
     private Integer precio;
-    private Date fecha;
+    private MyDate fecha;
     private DescuentoValue descuento;
 
 }
