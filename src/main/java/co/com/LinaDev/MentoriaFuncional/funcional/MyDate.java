@@ -26,4 +26,9 @@ public class MyDate {
     public Boolean isABefore(MyDate myDate){
         return date.isBefore(myDate.getDate());
     }
+
+    // equal
+    public Boolean isEqual(MyDate myDate){
+        return date.isEqual(myDate.getDate());
+    }
 }

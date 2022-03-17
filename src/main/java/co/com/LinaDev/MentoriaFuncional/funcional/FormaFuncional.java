@@ -63,9 +63,7 @@ public class FormaFuncional {
                 .filter(producto -> producto.getFecha().isAfter(new MyDate("2018-12-31")))
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
-
-        // filtrar por id
-
+        
         // multiplicar precio por 2
 
         // filtrar por precio
