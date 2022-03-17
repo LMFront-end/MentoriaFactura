@@ -59,6 +59,10 @@ public class FormaFuncional {
 
         // filtrar por fecha menor al 2018
         System.out.println("Filtrar por fecha menor al 2018");
+        listaProducto.stream()
+                .filter(producto -> producto.getFecha().isAfter(new MyDate("2018-12-31")))
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
 
         // filtrar por id
 

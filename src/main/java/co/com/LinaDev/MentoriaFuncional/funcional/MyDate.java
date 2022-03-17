@@ -17,7 +17,13 @@ public class MyDate {
         date = LocalDate.parse(inputDate);
     }
 
+    // after
     public Boolean isAfter(MyDate myDate){
         return date.isAfter(myDate.getDate());
+    }
+
+    // before
+    public Boolean isABefore(MyDate myDate){
+        return date.isBefore(myDate.getDate());
     }
 }
