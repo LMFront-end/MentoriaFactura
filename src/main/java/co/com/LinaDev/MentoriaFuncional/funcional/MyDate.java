@@ -23,7 +23,7 @@ public class MyDate {
     }
 
     // before
-    public Boolean isABefore(MyDate myDate){
+    public Boolean isBefore(MyDate myDate){
         return date.isBefore(myDate.getDate());
     }
 

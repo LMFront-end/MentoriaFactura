@@ -60,15 +60,26 @@ public class FormaFuncional {
         // filtrar por fecha menor al 2018
         System.out.println("Filtrar por fecha menor al 2018");
         listaProducto.stream()
-                .filter(producto -> producto.getFecha().isAfter(new MyDate("2018-12-31")))
+                .filter(producto -> producto.getFecha().isBefore(new MyDate("2018-12-31")))
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
-        
+
         // multiplicar precio por 2
+        System.out.println("Multiplicar precio por 2");
+        listaProducto.stream()
+                .map(producto -> producto.getPrecio() * 2)
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
 
         // filtrar por precio
+        System.out.println("Filtrar por precio");
+        listaProducto.stream()
+                .filter(producto -> producto.getPrecio() > 900)
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
 
-        // filtrar por descuento
+        // filtrar por descuento (SI_APLICA)
+        System.out.println("filtrar por descuento");
 
         // mostrar el primer elemento mayor a $300
 
