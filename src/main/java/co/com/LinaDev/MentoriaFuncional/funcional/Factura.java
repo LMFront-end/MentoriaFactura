@@ -3,9 +3,11 @@ package co.com.LinaDev.MentoriaFuncional.funcional;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.util.Date;
 
+@ToString
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

@@ -3,6 +3,7 @@ package co.com.LinaDev.MentoriaFuncional.funcional;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class FormaFuncional {
 
@@ -30,17 +31,38 @@ public class FormaFuncional {
         listaProducto.add(f7);
 
         // mostrar todos los elementos de la lista
-        listaProducto.forEach(System.out::println);
+        System.out.println("Mostrar todos los elementos");
+        listaProducto.stream()
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
 
         // mostrar elemento por id
+        System.out.println("Mostrar elementos por id");
+        listaProducto.stream()
+                .filter(producto -> producto.getIdFactura() == 2)
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
 
         // filtrar por nombre
+        System.out.println("Filtrar por nombre");
+        listaProducto.stream()
+                .filter(producto -> producto.getNombreProducto() == "Aro de luz")
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
 
         // filtrar por fecha mayor al 2019
+        System.out.println("Filtrar por fecha mayor al 2019");
+        listaProducto.stream()
+                .filter(producto -> producto.getFecha().isAfter(new MyDate("2019-12-31")))
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
 
         // filtrar por fecha menor al 2018
+        System.out.println("Filtrar por fecha menor al 2018");
 
         // filtrar por id
+
+        // multiplicar precio por 2
 
         // filtrar por precio
 
