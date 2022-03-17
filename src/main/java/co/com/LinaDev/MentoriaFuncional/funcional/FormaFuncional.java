@@ -18,16 +18,37 @@ public class FormaFuncional {
         Factura f7 = new Factura(7, "Aro de luz", 200, new MyDate("2018-05-05"), DescuentoValue.NO_APLICA);
 
         // generar una lista
-        List<Factura> lista = new ArrayList<>();
+        List<Factura> listaProducto = new ArrayList<>();
 
         // agregar los productos de la factura
-        lista.add(f1);
-        lista.add(f2);
-        lista.add(f3);
-        lista.add(f4);
-        lista.add(f5);
-        lista.add(f6);
-        lista.add(f7);
+        listaProducto.add(f1);
+        listaProducto.add(f2);
+        listaProducto.add(f3);
+        listaProducto.add(f4);
+        listaProducto.add(f5);
+        listaProducto.add(f6);
+        listaProducto.add(f7);
+
+        // mostrar todos los elementos de la lista
+        listaProducto.forEach(System.out::println);
+
+        // mostrar elemento por id
+
+        // filtrar por nombre
+
+        // filtrar por fecha mayor al 2019
+
+        // filtrar por fecha menor al 2018
+
+        // filtrar por id
+
+        // filtrar por precio
+
+        // filtrar por descuento
+
+        // mostrar el primer elemento mayor a $300
+
+        //
 
     }
 }
