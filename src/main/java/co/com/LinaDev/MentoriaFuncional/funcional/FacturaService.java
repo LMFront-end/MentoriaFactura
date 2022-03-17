@@ -1,7 +1,8 @@
 package co.com.LinaDev.MentoriaFuncional.funcional;
 
-import java.util.ArrayList;
+
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class FacturaService {
@@ -29,7 +30,7 @@ public class FacturaService {
     public static void filtrarPorNombre(){
         System.out.println("Filtrar por nombre: ");
         listaProducto.stream()
-                .filter(producto -> producto.getNombreProducto() == "Aro de luz")
+                .filter(producto -> Objects.equals(producto.getNombreProducto(), "Aro de luz"))
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
     }
