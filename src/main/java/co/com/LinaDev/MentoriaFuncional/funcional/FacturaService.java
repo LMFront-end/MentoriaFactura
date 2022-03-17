@@ -12,8 +12,7 @@ public class FacturaService {
     // mostrar todos los elementos de la lista
     public static void mostrarListaProductos(){
         System.out.println("Mostrar todos los elementos: ");
-        new ArrayList<>(listaProducto)
-                .forEach(System.out::println);
+        listaProducto.forEach(System.out::println);
     }
 
     // mostrar elemento por id
